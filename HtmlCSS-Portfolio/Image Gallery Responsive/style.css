@@ -1,0 +1,60 @@
+/* memberi style utk keseluruhan web */
+*{
+margin: 0;
+padding: 0;
+font-family: sans-serif;
+}
+
+/* memberi style utk tag body html */
+ body{
+    background: #ecf4fb;
+ }
+
+/* memberi style utk div dengan class image-gallery */
+ .image-gallery{
+    width: 75%;
+    margin: 100px auto 50px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    grid-gap: 30px;
+ }
+
+ .image-gallery img{
+    width: 100%;
+    cursor: pointer;
+ }
+
+ /* memberi efek ketika image diklik */
+ .image-gallery img:hover {
+    transform: scale(0.7) rotate(-20deg);
+    border-radius: 25px;
+    box-shadow: 0 30px 10px rgba(65,75,130,0.3);
+ }
+
+ /* memberi style div dengan class full-image */
+ .full-image{
+    width: 100%;
+    height: 100vh;
+    background:rgba(0,0,0,0.7);
+    position: fixed;
+    top: 0;
+    left: 0;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    z-index: 100;
+ }
+
+ .full-image img{
+    width: 90%;
+    max-width: 600px;
+ }
+
+ .full-image span{
+    position: absolute;
+    top: 5%;
+    right: 5%;
+    font-size: 30px;
+    color: white;
+    cursor: pointer;
+ }

@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles/style1.css">
+</head>
+<body>
+<h1 id="title">How to Improve Learning Programming?</h1>
+<p id="description">Thank you for taking time to fill out this survey</p>
+<form id="survey-form">
+  <div class="input-element">
+  <label id="name-label">
+    Name
+    </label>
+    <input placeholder="name" id="name" type="text" required/>
+  </div>
+
+   <div class="input-element">
+  <label id="email-label">
+    Email
+    </label>
+    <input placeholder="email" id="email" type="email" required/>
+  </div>
+
+   <div class="input-element">
+  <label id="number-label">
+    Age
+    </label>
+    <input placeholder="age" min="15" max="100" id="number" type="number" required/>
+  </div>
+
+ <div class="input-element">
+  <label id="select-label">
+    What's your favourite Programming Language?
+    </label> 
+   <select id="dropdown">
+     <option>Java</option>
+     <option>C++</option>
+     <option>Javascript</option>
+     <option>PHP</option>
+   </select>
+  </div>
+
+<div class="input-element">
+<label>Have you been learn a Programming before?
+</label>
+  <div>
+    <label><input type="radio" name="program" value="yes"/>Yes</label>
+  </div>
+  <div>
+    <label><input type="radio" name="program" value="no"/>No</label>
+</div>
+  </div>
+<div class="input-element">
+<label>Which sugesstions are good ideas to improve Programming?
+</label>
+  <div>
+    <label><input type="checkbox" name="ideas"value="study"/>Study Material Comprehensive</label>
+  </div>
+  <div>
+    <label><input type="checkbox" name="ideas"value="practice"/>More Practice</label>
+</div>
+<div>
+    <label><input type="checkbox" name="ideas"value="watch"/>Watch video tutorial and Practice</label>
+  </div>
+  <div>
+    <label><input type="checkbox" name="ideas"value="read"/>Read book programming for 30 minutes</label>
+</div>
+  </div>
+ <div class="input-element">
+   <label>
+     Additional Comments:
+   </label>
+  <textarea type="text"></textarea>
+  </div>  
+  <button type="submit" id="submit">Submit</button>
+</form>
+</body>
+</html>

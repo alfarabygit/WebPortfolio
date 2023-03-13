@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Gallery Image Responsive</title>
+</head>
+<body>
+    <!-- membuat container div image gallery -->
+    <div class="full-image" id="fullImageBox">
+        <img src="img/Untitled-2.jpg" alt="image-responsive" id="fullImage">
+        <!--  -->
+        <span onclick="closeFullImage()">X</span>
+    </div>
+    <div class="image-gallery">
+        <img src="img/Untitled-2.jpg" alt="image-responsive" onclick="openFullImage(this.src)">
+        <img src="img/Untitled-3.jpg" alt="image-responsive" onclick="openFullImage(this.src)">
+        <img src="img/Untitled-5.jpg" alt="image-responsive" onclick="openFullImage(this.src)">
+        <img src="img/Untitled-7.jpg" alt="image-responsive" onclick="openFullImage(this.src)">
+        <img src="img/Untitled-8.jpg" alt="image-responsive" onclick="openFullImage(this.src)">
+        <img src="img/Untitled-10.jpg" alt="image-responsive" onclick="openFullImage(this.src)">
+        <img src="img/Untitled-11.jpg" alt="image-responsive" onclick="openFullImage(this.src)">
+        <img src="img/Untitled-12.jpg" alt="image-responsive" onclick="openFullImage(this.src)">
+    </div>
+
+    <script>
+        // membuat skrip javascript utk behavior gallery image responsive
+        let fullImageBox = document.getElementById("fullImageBox"); 
+        let fullImage = document.getElementById("fullImage");
+
+        // membuat function javascript
+        function openFullImage(pic){
+            fullImageBox.style.display="flex";
+            fullImage.src=pic;
+        }
+        function closeFullImage()
+        {
+            fullImageBox.style.display="none";
+        }
+    </script>
+</body>
+</html>

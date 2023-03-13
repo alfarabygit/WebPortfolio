@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <title>SurveyForm</title>
+</head>
+<body>
+    <div class="heading">
+        <h1 id="title">freeCodeCamp Survey Form</h1>
+        <h2 id="subtitle"><i>Thank you for your time to help us improve the platform</i></h2>
+    </div>
+    <form action="">
+        <div id="content1">
+            <label for="">Name</label> <br><br>
+            <input type="name" name="name" placeholder="Enter your name" class="box"> <br><br>
+            <label for="">Email</label> <br><br>
+            <input type="email" name="email" placeholder="Enter your email" class="box"> <br><br>
+            <label for="">Age</label> <br><br>
+            <input type="age" name="age" placeholder="Enter your age" class="box"> <br><br>
+            <label for="">Which options best to describe your role?</label><br><br>
+        <div id="option1">
+            <select name="" id="">
+                <option name="Select your Role">Select your Role</option>
+                <option value="Student">Student</option>
+                <option value="Full Time Job">Full Time Job</option>
+                <option value="Part Time Job">Part Time Job</option>
+                <option value="Other">Other</option>
+            </select>
+        </div>
+   
+       <br>
+      <label id="head1">Would you like to recommend freeCodeCamp to your friends?</label><br><br>
+      <input type="radio" name="radio" class="larger">Definitely <br><br>
+      <input type="radio" name="radio" class="larger">OK         <br><br>
+      <input type="radio" name="radio" class="larger">Maybe Not  <br><br>
+      <label for="">What is your favourite feature freeCodeCamp?</label> <br><br>
+      <div id="option2">
+           <select name="" id="">
+                <option name="Select your option">Select your Option</option>
+                <option value="Challenge">Challenge</option>
+                <option value="Projects">Projects</option>
+                <option value="Community">Community</option>
+                <option value="Certiicate">Certiicate</option>
+                <option value="Open Source">Open Source</option>
+           </select> 
+      </div>
+      <br><br>
+      <label id="head2">What would you like to improve freeCodeCamp?</label> <br>
+      <div id="content2">
+        <input type="checkbox" name="checkbox" class="larger"><label>Front End Projects</label><br><br>
+        <input type="checkbox" name="checkbox" class="larger"><label>Back End Projects</label><br><br>
+        <input type="checkbox" name="checkbox" class="larger"><label>Full Stack Projects</label><br><br>
+        <input type="checkbox" name="checkbox" class="larger"><label>Dev Ops Projects</label><br><br>
+        <input type="checkbox" name="checkbox" class="larger"><label>UI/UX Projects</label><br><br>
+        <input type="checkbox" name="checkbox" class="larger"><label>Portfolio Projects</label><br><br>
+        <input type="checkbox" name="checkbox" class="larger"><label>Game Developer Projects</label><br><br>
+        <input type="checkbox" name="checkbox" class="larger"><label>Software Engineering Projects</label><br><br>
+        <input type="checkbox" name="checkbox" class="larger"><label>Data Analyst Projects</label><br><br>
+        <input type="checkbox" name="checkbox" class="larger"><label>Machine Learning Projects</label><br><br>
+      </div>
+      <label for="" id="head2">Any comments or suggestions?</label><br><br>
+      <textarea name="" id="" cols="65" rows="10" placeholder="Enter your comment"></textarea><br>
+      <button><h1>Submit</h1></button>
+    </div>
+    </form>
+</body>
+</html>
